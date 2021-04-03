@@ -1,0 +1,12 @@
+.Box{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  .ImagenPrincipal{
+    width: 1440px;
+    height: 633px;
+    background-image:linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.132)) , url("../../assets/img/pexels-photo-5359045.jpeg");
+    background-size: cover;
+  }
+  
+}
