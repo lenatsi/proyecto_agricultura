@@ -1,3 +1,4 @@
+@import "../../styles";
 .Box {
   width: 100%;
   display: flex;
@@ -95,35 +96,28 @@
 }
 
 .BoxTutorial {
-  width: 100%;
-  height: 978px;
   display: flex;
   justify-content: center;
   .Container {
     width: 1440px;
-    height: auto;
-    display: flex;
     border-top: 1px solid #4fa404a1;
     border-bottom: 1px solid #4fa404a1;
-    background-image: url("../../assets/img/Vector-1.png");
+    background: url("../../assets/img/Vector-1.png");
     background-size: 1093px 978px;
     background-position: right;
     background-repeat: no-repeat;
     .TextoTutorialHome {
+      display: block;
       margin-left: 131px;
       margin-top: 29px;
-      .Titulo {
-        width: 794px;
-        height: 85px;
-        h1 {
-          font-size: 50px;
-          font-weight: 300;
-        }
-        span {
-          font-size: 72px;
-          font-weight: 900;
-          font-variant: small-caps;
-        }
+      h1 {
+        font-size: 50px;
+        font-weight: 300;
+      }
+      span {
+        font-size: 72px;
+        font-weight: 900;
+        font-variant: small-caps;
       }
       p {
         width: 401px;
@@ -133,9 +127,10 @@
       }
     }
     .Video {
-      top: 125px;
-      right: 260px;
+      right: 50px;
+      bottom: 380px;
       position: relative;
+      float: right;
     }
   }
 }
