@@ -100,6 +100,7 @@
   justify-content: center;
   .Container {
     width: 1440px;
+    display: flow-root;
     border-top: 1px solid #4fa404a1;
     border-bottom: 1px solid #4fa404a1;
     background: url("../../assets/img/Vector-1.png");
@@ -107,7 +108,6 @@
     background-position: right;
     background-repeat: no-repeat;
     .TextoTutorialHome {
-      display: block;
       margin-left: 131px;
       margin-top: 29px;
       h1 {
