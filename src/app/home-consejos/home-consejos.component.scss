@@ -22,11 +22,28 @@
     .Box {
       display: flex;
       justify-content: center;
-      .circular--square {
-        width: 530px;
-        height: 530px;
+      .fondoVerde {
+        width: 589px;
+        height: 589px;
         margin-top: 50px;
         border-radius: 50%;
+        background-color: #7db541;
+        .fondoVerdeClaro {
+          width: 561px;
+          height: 561px;
+          border-radius: 50%;
+          background-color: #e3ffaf;
+          float: right;
+          .imagen {
+            width: 530px;
+            height: 530px;
+            border-radius: 50%;
+            background-image: url(../../assets/img/pexels-gary-barnes-6231906.jpeg);
+            background-size: cover;
+            background-position: center;
+            float: right;
+          }
+        }
       }
       .OlivosText {
         margin-left: 90px;
@@ -57,7 +74,7 @@
         padding-left: 121px;
         padding-right: 100px;
         padding-bottom: 20px;
-        .card{
+        .card {
           min-width: 100%;
           margin: 0;
           border: none;
@@ -71,7 +88,7 @@
             background-size: cover;
             background-position: center;
           }
-          .card-body{
+          .card-body {
             width: 280px;
             height: 200px;
             box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
