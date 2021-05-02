@@ -51,7 +51,7 @@
     background-image: url("../../assets/img/image-tutoriales.png");
     background-size: cover;
     .Text1 {
-      background-color: #4fa404a1;
+      background-color:$secondary_green;
       color: white;
       height: 80px;
       position: relative;
@@ -68,7 +68,7 @@
     background-image: url("../../assets/img/pexels-lachlan-ross-5967853.jpeg");
     background-size: cover;
     .Text2 {
-      background-color: #4fa404a1;
+      background-color:$secondary_green;
       color: white;
       height: 80px;
       position: relative;
@@ -84,7 +84,7 @@
     background-image: url("../../assets/img/imagen-planificacion.png");
     background-size: cover;
     .Text3 {
-      background-color: #4fa404a1;
+      background-color:$secondary_green;
       color: white;
       height: 80px;
       position: relative;
@@ -102,7 +102,7 @@
     width: 1440px;
     height: 978px;
     border-top: 1px solid #4fa404a1;
-    border-bottom: 1px solid #4fa404a1;
+    border-bottom: 1px solid $secondary_green;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url("../../assets/img/pexels-pixabay-265242.jpeg");
     background-size: 100% 100%;
     background-position-y: 200px;
@@ -141,12 +141,10 @@
       width: 100%;
       height: 50px;
       text-align: center;
-      color: white;
+      color: $primary_green;
       font-weight: 900;
       font-size: 36px;
-      font-style: italic;
       line-height: 42.26px;
-      font-variant: small-caps;
       margin-bottom: 41px;
     }
     .carousel {
@@ -173,7 +171,7 @@
       button {
         width: 100px;
         span {
-          color: #d7d7d7;
+          color: $secondary_blue_green;
         }
       }
     }
@@ -204,27 +202,23 @@
       display: flex;
       justify-content: center;
       .fondoVerde {
-        width: 589px;
-        height: 589px;
+        width: 700px;
+        height: 700px;
         margin-top: 50px;
-        border-radius: 50%;
-        background-color: #7db541;
-        .fondoVerdeClaro {
-          width: 561px;
-          height: 561px;
-          border-radius: 50%;
-          background-color: #e3ffaf;
-          float: right;
+        background-image: url('../../assets/img/klipartz.com\ \(2\).png');
+        background-size: contain;
+        background-repeat: no-repeat;
           .imagen {
             width: 530px;
             height: 530px;
+            display:block;
+            margin:auto;
             border-radius: 50%;
             background-image: url(../../assets/img/pexels-gary-barnes-6231906.jpeg);
             background-size: cover;
             background-position: center;
-            float: right;
           }
-        }
+
       }
       .OlivosText {
         margin-left: 90px;
@@ -292,7 +286,7 @@
     button {
       width: 100px;
       span {
-        color: #d7d7d7;
+        color: $secondary_blue_green;
       }
     }
   }
