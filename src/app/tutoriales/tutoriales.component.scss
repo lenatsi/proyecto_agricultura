@@ -64,16 +64,21 @@
     height:149px;
     border-top: 1px solid $secondary_green;
     background-color: $primary_yellow;
+    padding-top: 47px;
+    text-align: center;
     .row{
       width: 1440px;
       display: inline;
       margin: auto;
-      input{
-        width:500px;
+      mat-form-field{
+      width: 500px;
       }
+
+
       button{
         width:150px;
       }
     }
   }
 }
+

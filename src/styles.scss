@@ -14,3 +14,9 @@ $semantic_yellow:#e79a5bd0;
 *:not(i){
   font-family: "Raleway", sans-serif;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color:white;
+}
