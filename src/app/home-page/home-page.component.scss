@@ -103,9 +103,9 @@
     height: 978px;
     border-top: 1px solid #4fa404a1;
     border-bottom: 1px solid #4fa404a1;
-    background: url("../../assets/img/Vector-1.png");
-    background-size: 1093px 978px;
-    background-position: right;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url("../../assets/img/pexels-pixabay-265242.jpeg");
+    background-size: 100% 100%;
+    background-position-y: 200px;
     background-repeat: no-repeat;
     .Titulo {
       width: 100%;
