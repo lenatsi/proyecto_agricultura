@@ -135,6 +135,8 @@
       }
       iframe {
         width: 55%;
+        min-height: 447px;
+        height: auto;
       }
     }
     .Relacionados {
@@ -182,7 +184,7 @@
   justify-content: center;
   .Container {
     width: 1440px;
-    height: 1339px;
+    height: auto;
     margin-bottom: 50px;
     .Titulo {
       width: 100%;
@@ -241,10 +243,12 @@
       font-size: 36px;
       color: #2d5f00;
       font-weight: 900;
+
     }
     .carousel {
       width: 100%;
       margin-top: 20px;
+
       .carousel-inner {
         padding-left: 121px;
         padding-right: 100px;

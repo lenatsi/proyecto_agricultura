@@ -8,15 +8,17 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HomeConsejosComponent } from './home-consejos/home-consejos.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TutorialesComponent } from './tutoriales/tutoriales.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       TopMenuComponent,
       HomePageComponent,
       HomeConsejosComponent,
       FooterComponent,
       NotFoundComponent,
+      TutorialesComponent
    ],
   imports: [
     BrowserModule,
