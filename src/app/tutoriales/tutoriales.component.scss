@@ -73,7 +73,10 @@
       mat-form-field {
         width: 500px;
       }
-
+      a {
+        text-decoration: none;
+        color: black;
+      }
       button {
         width: 150px;
       }
@@ -88,7 +91,7 @@
       padding-top: 20px;
       padding-bottom: 10px;
       justify-content: space-evenly;
-      .video{
+      .video {
         iframe {
           width: 100%;
           min-height: 280px;

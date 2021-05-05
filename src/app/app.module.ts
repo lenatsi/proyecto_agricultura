@@ -43,13 +43,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { HomeConsejosComponent } from './home-consejos/home-consejos.component';
+import { HomeConsejosComponent } from './consejos/home-consejos.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TutorialesComponent } from './tutoriales/tutoriales.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { PlanificacionComponent } from './planificacion/planificacion.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
       HomeConsejosComponent,
       FooterComponent,
       NotFoundComponent,
-      TutorialesComponent
+      TutorialesComponent,
+      PlanificacionComponent
    ],
   imports: [
     BrowserModule,

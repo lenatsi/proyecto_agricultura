@@ -1,0 +1,95 @@
+@import "../../styles";
+.BoxPlanificacion {
+  display: flex;
+  justify-content: center;
+  .Container {
+    width: 1440px;
+    height: auto;
+    text-align: center;
+    h1 {
+      width: auto;
+      font-size: 72px;
+      font-weight: 300;
+      font-variant: small-caps;
+      span {
+        font-weight: 900;
+      }
+    }
+    .container2 {
+      margin-top: 80px;
+      .imagenSol {
+        width: 74px;
+        height: 74px;
+        background-image: url(../../assets/img/sol.jpg);
+        background-repeat: none;
+        background-size: cover;
+        margin-left: 23%;
+      }
+      .Box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding-bottom: 50px;
+        .imagenHuerto {
+          width: 490px;
+          height: 773px;
+          background-image: url(../../assets/img/huerto.png);
+          box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
+          z-index: 5;
+        }
+        .formulario {
+          width: 456px;
+          height: auto;
+          border-radius: 25px;
+          background-color: #fbfff4;
+          box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
+          margin-left: 227px;
+          z-index: 5;
+          .fa-user {
+            margin-top: 30px;
+            font-size: 46px;
+            color: green;
+          }
+          .options {
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            .iden {
+              margin-right: 46px;
+            }
+            .line {
+              border-left: 2px solid black;
+              height: 49px;
+              position: relative;
+            }
+            .regis {
+              margin-left: 46px;
+            }
+            a {
+              padding-top: 7px;
+              font-size: 20px;
+              font-variant: small-caps;
+              text-decoration: none;
+              color: black;
+            }
+            a.active {
+              color: #000000e9;
+              font-weight: 700;
+            }
+          }
+        }
+        .gradient {
+          width: 1440px;
+          height: 745px;
+          position: absolute;
+          margin-top: 80px;
+          background-image: linear-gradient(#fffbce, #7bbd3b);
+        }
+      }
+    }
+  }
+}

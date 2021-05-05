@@ -1,4 +1,4 @@
-.TopMenu{
+.TopMenu {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
       align-self: center;
       text-align: left;
       padding-left: 131px;
-      img{
+      img {
         height: 67px;
         width: auto;
       }
@@ -30,32 +30,30 @@
         margin-left: 18px;
         color: #000000;
         text-decoration: none;
-        &:hover{
-          color:#000000e9;
+        &:hover {
+          color: #000000e9;
           font-weight: 600;
         }
-        &:active{
-          color:#000000e9;
-          font-weight: 500;
-        }
       }
-
+      a.active {
+        color: #000000e9;
+        font-weight: 700;
+      }
     }
-    .RedesSociales{
-      width:10%;
-      margin-top:39px;
-      height:21px;
-      a{
-        margin-left:4px;
+    .RedesSociales {
+      width: 10%;
+      margin-top: 39px;
+      height: 21px;
+      a {
+        margin-left: 4px;
         color: #00000035;
         text-decoration: none;
-        font-size:21px;
-        &:hover{
-          color:#000000e9;
+        font-size: 21px;
+        &:hover {
+          color: #000000e9;
           font-weight: 600;
         }
       }
-
     }
   }
 }
