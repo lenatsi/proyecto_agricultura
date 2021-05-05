@@ -23,27 +23,23 @@
       display: flex;
       justify-content: center;
       .fondoVerde {
-        width: 589px;
-        height: 589px;
+        width: 700px;
+        height: 700px;
         margin-top: 50px;
-        border-radius: 50%;
-        background-color: #7db541;
-        .fondoVerdeClaro {
-          width: 561px;
-          height: 561px;
-          border-radius: 50%;
-          background-color: #e3ffaf;
-          float: right;
+        background-image: url('../../assets/img/klipartz.com\ \(2\).png');
+        background-size: contain;
+        background-repeat: no-repeat;
           .imagen {
             width: 530px;
             height: 530px;
+            display:block;
+            margin:auto;
             border-radius: 50%;
             background-image: url(../../assets/img/pexels-gary-barnes-6231906.jpeg);
             background-size: cover;
             background-position: center;
-            float: right;
           }
-        }
+
       }
       .OlivosText {
         margin-left: 90px;
@@ -107,11 +103,11 @@
         }
       }
     }
+
     button {
       width: 100px;
-      /*por algún motivo no cambia el color de las flechas T_T*/
       span {
-        color: aquamarine !important;
+        color: #d7d7d7;
       }
     }
   }
