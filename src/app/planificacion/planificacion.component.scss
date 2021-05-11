@@ -81,13 +81,72 @@
               font-weight: 700;
             }
           }
+          .validate {
+            width: 70%;
+            height: 70%;
+            margin-top: 10px;
+            border-radius: 50px;
+            border-width: 0px;
+            box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
+          }
+          .field {
+            float: left;
+            margin-left: 20%;
+            font-size: 18px;
+            font-weight: 200;
+          }
+          .row {
+            margin-top: 7%;
+          }
+          .forgetdiv {
+            margin-top: 15%;
+            .forget {
+              font-size: 14px;
+              font-weight: 200;
+              a {
+                color: black;
+              }
+            }
+          }
+          .loginbutton {
+            margin-top: 10%;
+            .button {
+              width: 50%;
+              height: auto;
+              border-radius: 50px;
+              box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
+              border-width: 0px;
+              background-color: white;
+              span {
+                font-size: 36px;
+                font-weight: 700;
+                color: #2d5f00;
+              }
+            }
+          }
+          .registerbutton {
+            margin-top: 10%;
+            .button {
+              width: 65%;
+              height: auto;
+              border-radius: 50px;
+              box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
+              border-width: 0px;
+              background-color: white;
+              span {
+                font-size: 36px;
+                font-weight: 700;
+                color: #2d5f00;
+              }
+            }
+          }
         }
         .gradient {
           width: 1440px;
           height: 745px;
           position: absolute;
           margin-top: 80px;
-          background-image: linear-gradient(#fffbce, #7bbd3b);
+          background-image: linear-gradient(#fffbce, #2E5902);
         }
       }
     }

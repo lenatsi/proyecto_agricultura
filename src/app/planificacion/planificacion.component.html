@@ -6,18 +6,85 @@
     <div class="container2">
       <div class="imagenSol"></div>
       <div class="Box">
+        <div class="gradient">
+        </div>
         <div class="imagenHuerto"></div>
         <div class="formulario">
           <i class="fas fa-user"></i>
           <div class="options">
-            <a class="iden" href="">Identifícate</a>
+            <a href="javascript: void(0)" class="iden" [ngClass]="{'active': loginActive}" (click)="login()">Identifícate</a>
             <div class="line"></div>
-            <a class="regis" href="">Regístrate</a>
+            <a href="javascript: void(0)" class="regis" [ngClass]="{'active': registerActive}" (click)="register()">Regístrate</a>
           </div>
-        </div>
-        <div class="gradient">
+          <form [style.display]="loginVisible ? 'block' : 'none'">
+            <div id="login" class="col s12">
+              <form class="col s12">
+                <div class="form-container">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <span class="field">Usuario:</span><br>
+                      <input id="email" type="email" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <span class="field">Contraseña:</span><br>
+                      <input id="password" type="password" class="validate">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="forgetdiv">
+              <span class="forget">¿Has olvidado la contraseña?<a href=""> Recuperar</a></span>
+            </div>
+            <div class="loginbutton">
+              <button class="button"><span>ENTRAR</span></button>
+            </div>
+          </form>
+          <form [style.display]="registerVisible ? 'block' : 'none'">
+          <div class="registerdiv">
+            <div id="register" class="col s12">
+              <form class="col s12">
+                <div class="form-container">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <span class="field">Nombre:</span><br>
+                      <input id="email" type="email" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <span class="field">Email:</span><br>
+                      <input id="password" type="password" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <span class="field">Contraseña:</span><br>
+                      <input id="password" type="password" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <span class="field">Confirmar contraseña:</span><br>
+                      <input id="password" type="password" class="validate">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="forgetdiv">
+              <input type="checkbox">&nbsp;
+              <span class="forget">Acepto la <a href="">Política de privacidad </a> y <a href="">Protección de
+                  datos</a></span>
+            </div>
+            <div class="registerbutton">
+              <button class="button"><span>REGISTRARSE</span></button>
+            </div>
+          </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-</div>

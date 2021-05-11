@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanificacionComponent implements OnInit {
 
-  constructor() { }
+  loginVisible = true;
+  registerVisible = false;
+  loginActive = true;
+  registerActive = false;
 
+  login() {
+    this.loginVisible = true;
+    this.registerVisible = false
+    this.loginActive = true;
+    this.registerActive = false;
+  }
+  register(){
+    this.loginVisible = false;
+    this.registerVisible = true
+    this.loginActive = false;
+    this.registerActive = true;
+  }
   ngOnInit(): void {
   }
-
 }
