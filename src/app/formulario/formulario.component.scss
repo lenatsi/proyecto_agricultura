@@ -1,0 +1,48 @@
+@import "../../styles";
+.box {
+  display: flex;
+  justify-content: center;
+  .contenedor {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    .alldiv {
+      width: 658px;
+      height: 873px;
+      background: rgba(46, 89, 2, 0.55);
+      z-index: 5;
+      .tittlebox {
+        display: flex;
+        justify-content: center;
+        .tittlediv {
+          margin-top: 50px;
+          .class1 {
+            font-size: 48px;
+            font-variant: small-caps;
+            color: white;
+            font-weight: 100;
+          }
+          .class2 {
+            font-size: 72px;
+            color: white;
+            font-weight: 800;
+          }
+        }
+      }
+      .optionsdiv {
+        margin-top: 105px;
+        .options {
+          color: white;
+          font-size: 36px;
+          font-weight: 800;
+        }
+      }
+    }
+    .gradient {
+      width: 1440px;
+      height: 745px;
+      position: absolute;
+      background-image: linear-gradient(#fffbce, #2e5902);
+    }
+  }
+}

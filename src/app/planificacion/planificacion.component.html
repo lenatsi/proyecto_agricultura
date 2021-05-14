@@ -39,7 +39,7 @@
               <span class="forget">¿Has olvidado la contraseña?<a href=""> Recuperar</a></span>
             </div>
             <div class="loginbutton">
-              <button class="button"><span>ENTRAR</span></button>
+              <button routerLink="/dashboard" routerLinkActive="active" class="button" class="button"><span>ENTRAR</span></button>
             </div>
           </form>
           <form [style.display]="registerVisible ? 'block' : 'none'">
@@ -80,7 +80,7 @@
                   datos</a></span>
             </div>
             <div class="registerbutton">
-              <button class="button"><span>REGISTRARSE</span></button>
+              <button routerLink="/formulario" routerLinkActive="active" class="button"><span>REGISTRARSE</span></button>
             </div>
           </div>
           </form>
@@ -88,3 +88,4 @@
       </div>
     </div>
   </div>
+</div>

@@ -1,0 +1,38 @@
+.box {
+  display: flex;
+  justify-content: center;
+  .contenedor {
+    width: 1440px;
+    height: auto;
+    .sidebar {
+      width: 112px;
+      height: auto;
+      background-color: white;
+      border-top: 2px solid #2e5902;
+      border-right: 2px solid #2e5902;
+      img {
+        width: 54px;
+        height: auto;
+        color: #2e5902;
+        fill: #2e5902;
+      }
+    }
+    .sidebar a {
+      width: 112px;
+      height: 112px;
+      display: block;
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      padding-top: 23px;
+    }
+    .sidebar a.active {
+      background-color: #2e5902;
+      color: white;
+    }
+    .sidebar a:hover:not(.active) {
+      box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

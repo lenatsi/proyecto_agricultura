@@ -51,6 +51,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { PlanificacionComponent } from './planificacion/planificacion.component';
+import { FormularioComponent } from './formulario/formulario.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { PlanificacionComponent } from './planificacion/planificacion.component'
       FooterComponent,
       NotFoundComponent,
       TutorialesComponent,
-      PlanificacionComponent
+      PlanificacionComponent,
+      FormularioComponent,
+      DashboardComponent
    ],
   imports: [
     BrowserModule,
