@@ -53,6 +53,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { PlanificacionComponent } from './planificacion/planificacion.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LateralMenuComponent } from './lateral-menu/lateral-menu.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
       TutorialesComponent,
       PlanificacionComponent,
       FormularioComponent,
-      DashboardComponent
+      DashboardComponent,
+      LateralMenuComponent
    ],
   imports: [
     BrowserModule,
