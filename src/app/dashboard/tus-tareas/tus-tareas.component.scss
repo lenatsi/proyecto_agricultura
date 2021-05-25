@@ -1,0 +1,126 @@
+.body {
+  width: auto;
+  height: auto;
+  margin-left: 151px;
+  .head {
+    width: 1006px;
+    height: 206px;
+    display: flex;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    .headcontainer {
+      padding-left: 24px;
+      padding-top: 16px;
+      .spantittle {
+        font-weight: 600;
+        font-size: 30px;
+        font-variant: small-caps;
+      }
+      .text {
+        width: 653px;
+        padding-top: 24px;
+        font-size: 16px;
+        font-size: 16px;
+      }
+    }
+    .img {
+      width: 216px;
+      height: 206px;
+      margin-left: 115px;
+      background-image: linear-gradient(
+          270deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 74.61%
+        ),
+        url(../../../assets/img/overhead-view-of-soil-plant-and-peat-tray-with-gardening-glove-on-white-wooden-surface.jpeg);
+      border-radius: 8px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      background-size: cover;
+    }
+  }
+  .boxañadir {
+    margin-top: 48px;
+    .añadir {
+      display: flex;
+      justify-content: space-between;
+      .input {
+        width: 651px;
+        height: 50px;
+        border-color: #386c5f;
+      }
+      .btn {
+        background-color: #2e5902;
+      }
+    }
+  }
+  .contenedortareas {
+    margin-top: 58px;
+    width: 1006px;
+    .headtareas {
+      border: 2px solid #386c5f;
+      border-bottom: 0px solid #386c5f;
+      .tareas {
+        font-size: 30px;
+        font-weight: 600;
+        font-variant: small-caps;
+      }
+      .fecha {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .finalizada {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 33px;
+      height: 12px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-color: #868c70;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+    input:checked + .slider {
+      background-color: white;
+    }
+    input:focus + .slider {
+      box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(21px);
+      -ms-transform: translateX(21px);
+      transform: translateX(21px);
+    }
+    .slider.round {
+      border-radius: 34px;
+    }
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  }
+}

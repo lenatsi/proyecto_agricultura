@@ -1,0 +1,110 @@
+.body {
+  width: auto;
+  height: auto;
+  margin-left: 151px;
+  .head {
+    width: 1006px;
+    height: 206px;
+    display: flex;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    .headcontainer {
+      padding-left: 24px;
+      padding-top: 16px;
+      .spantittle {
+        font-weight: 600;
+        font-size: 30px;
+        font-variant: small-caps;
+      }
+      .text {
+        width: 653px;
+        padding-top: 24px;
+        font-size: 16px;
+        font-size: 16px;
+      }
+    }
+    .img {
+      width: 216px;
+      height: 206px;
+      margin-left: 115px;
+      background-image: linear-gradient(
+          270deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 74.61%
+        ),
+        url(../../../assets/img/overhead-view-of-soil-plant-and-peat-tray-with-gardening-glove-on-white-wooden-surface.jpeg);
+      border-radius: 8px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      background-size: cover;
+    }
+  }
+  .tablecontainer {
+    width: 1006px;
+    height: auto;
+    margin-top: 32px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    .tabletittle {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      .tucalendario {
+        font-size: 36px;
+        font-weight: 100;
+        padding-left: 41px;
+      }
+      .today {
+        margin-top: 19px;
+        font-size: 13px;
+        font-weight: 300;
+        padding-right: 58px;
+        .date {
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+    .tablejustify {
+      display: flex;
+      justify-content: center;
+      table.table {
+        width: 944px;
+        height: 664px;
+        text-align: center;
+        border: 1px solid #386c5f;
+        thead,
+        tr,
+        th,
+        td {
+          border: none;
+        }
+        .estaciones {
+          font-size: 13px;
+        }
+        .misplantas {
+          font-size: 18px;
+          font-weight: 500;
+          font-variant: small-caps;
+        }
+        .withcolor {
+          background: rgba(123, 189, 59, 0.14);
+        }
+      }
+    }
+    .leyenda {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 47px;
+      img {
+        padding-right: 9px;
+      }
+      .terreno {
+        margin-left: 45px;
+      }
+      .recogida {
+        margin-left: 45px;
+      }
+    }
+  }
+}

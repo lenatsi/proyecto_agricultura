@@ -1,0 +1,60 @@
+<div class="body">
+  <div class="head">
+    <div class="headcontainer">
+      <div class="tittle"><span class="spantittle">¡No te olvides de nada!</span>
+      </div>
+      <div class="text">
+        <p>Para que no se te pase nada, puedes crear aquí una lista personalizada con tareas. No es complicado. Sólo
+          escribe tu tares y dale al botón ‘Añadir tarea’, y ¡listo! También puedes marcar las tareas como hechas o
+          eliminar aquellas que no quieres que aparezcan más. ¡Sé creativo!</p>
+      </div>
+    </div>
+    <div class="img"></div>
+  </div>
+  <div class="boxañadir">
+    <div class="contenedorañadir">
+      <div class="añadir">
+        <div class="input">
+          <input type="text" class="input form-control" placeholder="Escriba aquí lo que quieres añadir..." #newFilm
+            (keyup.enter)="addFilm(newFilm)">
+        </div>
+        <div class="fecha">
+          <input type="date" id="start" name="trip-start">
+        </div>
+        <div class="button">
+          <button class="btn btn-success" type="button" id="button-addon2" (click)="addFilm(newFilm)">AÑADIR
+            TAREA</button>
+        </div>
+      </div>
+      <div *ngIf="isTareaEmpty" class="alert alert-danger" role="alert">
+        El campo no puede estar vacío
+      </div>
+    </div>
+  </div>
+  <table class="contenedortareas">
+    <thead>
+      <tr class="headtareas">
+        <th class="tareas"><span>Mis tareas</span></th>
+        <th class="fecha"><span>FECHA LIMITE PARA REALIZARLA</span></th>
+        <th class="finalizada">FINALIZADA<span></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tarea of tareas; let i = index"
+        class="list-group-item d-flex justify-content-between align-items-center">
+        <td><span class="tareaform">{{tarea}} </span></td>
+        <td>
+          <div class="fechaform">fecha</div>
+        </td>
+        <td><label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span class="checktarea">Hecha</span>
+          <button type="button" class="buttonpapelera" (click)="deleteFilm(i)"><img class="imgpapelera"
+              src="../../../assets/icons/basura 3.svg" alt="papelera"></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

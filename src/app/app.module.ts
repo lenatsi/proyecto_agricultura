@@ -54,6 +54,10 @@ import { PlanificacionComponent } from './planificacion/planificacion.component'
 import { FormularioComponent } from './formulario/formulario.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LateralMenuComponent } from './lateral-menu/lateral-menu.component';
+import { TuHuertoComponent } from './dashboard/tu-huerto/tu-huerto.component';
+import { TuCalendarioComponent } from './dashboard/tu-calendario/tu-calendario.component';
+import { TusTareasComponent } from './dashboard/tus-tareas/tus-tareas.component';
+import { TusAjustesComponent } from './dashboard/tus-ajustes/tus-ajustes.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +71,11 @@ import { LateralMenuComponent } from './lateral-menu/lateral-menu.component';
       PlanificacionComponent,
       FormularioComponent,
       DashboardComponent,
-      LateralMenuComponent
+      LateralMenuComponent,
+      TuHuertoComponent,
+      TuCalendarioComponent,
+      TusTareasComponent,
+      TusAjustesComponent
    ],
   imports: [
     BrowserModule,

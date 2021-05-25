@@ -1,0 +1,75 @@
+.body {
+  width: auto;
+  height: auto;
+  margin-left: 151px;
+  .head {
+    width: 1006px;
+    height: 206px;
+    display: flex;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    .headcontainer {
+      padding-left: 24px;
+      padding-top: 16px;
+      .spantittle {
+        font-weight: 600;
+        font-size: 30px;
+        font-variant: small-caps;
+      }
+      .text {
+        width: 653px;
+        padding-top: 24px;
+        font-size: 16px;
+        font-size: 16px;
+      }
+    }
+    .img {
+      width: 216px;
+      height: 206px;
+      margin-left: 115px;
+      background-image: linear-gradient(
+          270deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 74.61%
+        ),
+        url(../../../assets/img/overhead-view-of-soil-plant-and-peat-tray-with-gardening-glove-on-white-wooden-surface.jpeg);
+      border-radius: 8px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      background-size: cover;
+    }
+  }
+  .bodycontainer {
+    margin-top: 85px;
+    margin-bottom: 568px;
+    display: flex;
+    justify-content: center;
+    .datospersonales {
+      width: 401px;
+      height: 377px;
+      margin-right: 43px;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+    }
+    .privacidad {
+      width: 562px;
+      height: 377px;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+    }
+    .tittle {
+      font-size: 36px;
+      font-weight: 100;
+      padding-left: 18px;
+      padding-top: 22px;
+    }
+    .field {
+      font-size: 18px;
+      font-weight: 500;
+      font-variant: small-caps;
+    }
+    .data{
+      padding-left: 35px;
+      padding-top: 51px;
+    }
+  }
+}
