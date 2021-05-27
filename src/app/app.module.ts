@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
+import { AuthInterceptorService } from './services/interceptors/auth-interceptor.service';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
 import { MatBadgeModule } from '@angular/material/badge'
@@ -58,6 +60,11 @@ import { TuHuertoComponent } from './dashboard/tu-huerto/tu-huerto.component';
 import { TuCalendarioComponent } from './dashboard/tu-calendario/tu-calendario.component';
 import { TusTareasComponent } from './dashboard/tus-tareas/tus-tareas.component';
 import { TusAjustesComponent } from './dashboard/tus-ajustes/tus-ajustes.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import localeES from "@angular/common/locales/es";
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeES, "es");
 
 @NgModule({
   declarations: [
@@ -119,8 +126,16 @@ import { TusAjustesComponent } from './dashboard/tus-ajustes/tus-ajustes.compone
     MatTreeModule,
     MatFormFieldModule,
     ReactiveFormsModule,
+    HttpClientModule,
+
   ],
-  providers: [],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' },{provide: LOCALE_ID, useValue: 'es-ES'},
+  {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptorService,
+    multi: true,
+  },{ provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
+  JwtHelperService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
