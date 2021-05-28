@@ -1,28 +1,22 @@
-<div class="box">
-  <div class="contenedor">
-    <div class="gradient">
-    </div>
-    <div class="alldiv">
-      <div class="tittlecontainer">
-        <div class="tittlebox">
-          <div class="tittlediv">
-            <span class="class1">¡Empezemos con</span><br>
-            <span class="class2">TU HUERTO!</span>
-          </div>
-        </div>
+<div class="Form">
+  <div class="pasos">
+    <h1>Empezamos con <br><span>tu huerto!</span></h1>
+    <div class="steps">
+      <div class="linea"></div>
+      <div class="dibujos">
+        <div class="cir"></div>
+        <div class="cir"></div>
+        <div class="cir"></div>
+        <div class="cir"></div>
       </div>
-      <div class="optionscontainer">
-        <div class="optionsbox">
-          <div class="optionsdiv">
-            <span class="options">Primeros pasos</span><br>
-            <span class="options">Algo más de información</span><br>
-            <span class="options">Tus preferencias</span><br>
-            <span class="options">Ya casi...</span><br>
-          </div>
-        </div>
+      <div class="textos">
+        <p routerLink="/formulario" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Primeros pasos</p>
+        <p routerLink="/formulario/second" routerLinkActive="active">Algo más de informacion</p>
+        <p routerLink="/formulario/third" routerLinkActive="active">Tus preferencias</p>
+        <p routerLink="/formulario/final" routerLinkActive="active">Ya casi..</p>
       </div>
-    </div>
-    <div class="formdiv">
     </div>
   </div>
+  <div class="formulario"><router-outlet></router-outlet></div>
 </div>
+

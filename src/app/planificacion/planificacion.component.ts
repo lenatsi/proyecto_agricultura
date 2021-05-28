@@ -161,7 +161,7 @@ export class PlanificacionComponent implements OnInit {
     user.name = this.fs.namesignup.value
     this.userService.signup(user).subscribe(
       (data) => {
-        this.loginvisible()
+        this.router.navigate(['/formulario'])
       },
       (error) => {
         this.notifierService.notify(

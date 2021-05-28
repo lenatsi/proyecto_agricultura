@@ -1,3 +1,7 @@
+import { StepFourComponent } from './formulario/stepFour/stepFour.component';
+import { StepThreeComponent } from './formulario/stepThree/stepThree.component';
+import { StepTwoComponent } from './formulario/stepTwo/stepTwo.component';
+import { StepOneComponent } from './formulario/stepOne/stepOne.component';
 import { ConsejoComponent } from './consejo/consejo.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { TusTareasComponent } from './dashboard/tus-tareas/tus-tareas.component';
@@ -15,11 +19,17 @@ import { TuCalendarioComponent } from './dashboard/tu-calendario/tu-calendario.c
 import { TusAjustesComponent } from './dashboard/tus-ajustes/tus-ajustes.component';
 
 const routes: Routes = [
-  { path: "", component: HomePageComponent },
+  { path: "", component: HomePageComponent, pathMatch:"full"},
   { path: "consejos", component: HomeConsejosComponent },
   { path: "tutoriales", component: TutorialesComponent },
   { path: "planificacion", component: PlanificacionComponent },
-  { path: "formulario", component: FormularioComponent },
+  { path: "formulario", component: FormularioComponent,
+children: [
+  {path: "", component: StepOneComponent, pathMatch:"full"},
+  {path: "second", component: StepTwoComponent},
+  {path: "third", component: StepThreeComponent},
+  {path: "final", component: StepFourComponent}
+] },
   {path: "tutorial/:id", component: TutorialComponent},
   {path: "consejo/:id", component: ConsejoComponent},
   {path: "dashboard", component: DashboardComponent,

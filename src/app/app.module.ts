@@ -1,3 +1,7 @@
+import { StepFourComponent } from './formulario/stepFour/stepFour.component';
+import { StepThreeComponent } from './formulario/stepThree/stepThree.component';
+import { StepTwoComponent } from './formulario/stepTwo/stepTwo.component';
+import { StepOneComponent } from './formulario/stepOne/stepOne.component';
 import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { AuthInterceptorService } from './services/interceptors/auth-interceptor.service';
 import { LOCALE_ID, NgModule } from '@angular/core';
@@ -124,7 +128,11 @@ const customNotifierOptions: NotifierOptions = {
       TuCalendarioComponent,
       TusTareasComponent,
       TusAjustesComponent,
-      ConsejoComponent
+      ConsejoComponent,
+      StepOneComponent,
+      StepTwoComponent,
+      StepThreeComponent,
+      StepFourComponent
    ],
   imports: [
     BrowserModule,

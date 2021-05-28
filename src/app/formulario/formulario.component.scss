@@ -1,48 +1,86 @@
 @import "../../styles";
-.box {
+
+.Form {
+  width: 1440px;
+  height: 943px;
+  margin: auto;
   display: flex;
-  justify-content: center;
-  .contenedor {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    .alldiv {
-      width: 658px;
-      height: 873px;
-      background: rgba(46, 89, 2, 0.55);
-      z-index: 5;
-      .tittlebox {
-        display: flex;
-        justify-content: center;
-        .tittlediv {
-          margin-top: 50px;
-          .class1 {
-            font-size: 48px;
-            font-variant: small-caps;
-            color: white;
-            font-weight: 100;
-          }
-          .class2 {
-            font-size: 72px;
-            color: white;
-            font-weight: 800;
-          }
-        }
+  padding-top: -1000px;
+  margin-top: 294px;
+  background: linear-gradient(0deg, #2e5902 0%, #7bbd3b 51.56%, #fffbce 100%),
+    #e3ffaf;
+  .pasos {
+    width: 658px;
+    height: 873px;
+    margin-top: -100px;
+    margin-left: 100px;
+    padding-left: 89px;
+    padding-top: 68px;
+    background: rgba(46, 89, 2, 0.55);
+    h1{
+      color:white;
+      font-size: 48px;
+      font-weight: 100;
+      font-variant: small-caps;
+      line-height: 52px;
+      margin-bottom: 105px;
+      span{
+        font-size: 72px;
+        font-weight: 800;
+        text-transform: uppercase;
       }
-      .optionsdiv {
-        margin-top: 105px;
-        .options {
-          color: white;
-          font-size: 36px;
-          font-weight: 800;
+    }
+    .steps{
+      display: flex;
+      .linea{
+        width: 5px;
+        height: 367px;
+        background-color: white;
+        margin-left: 18px;
+      }
+      .dibujos{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: -21px;
+        margin-right: 15px;
+        .cir{
+          width: 36px;
+          height: 36px;
+          background-color: white;
+          border-radius: 50px;
         }
       }
     }
-    .gradient {
-      width: 1440px;
-      height: 745px;
-      position: absolute;
-      background-image: linear-gradient(#fffbce, #2e5902);
+    .textos{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p{
+        height: 42px;
+        font-size: 36px;
+        margin:0;
+        padding-top: 0;
+        color: white;
+        font-weight: 100;
+        &:hover{
+          box-shadow: none;
+        }
+      }
+      p.active{
+        text-transform: uppercase;
+        font-weight: 800;
+        box-shadow: none;
+        outline: none;
+      }
     }
   }
+  .formulario {
+    width: 641px;
+    height: 1006px;
+margin-left:-75px;
+margin-top: -167px;
+    background: #2e5902;
+  }
+
 }
