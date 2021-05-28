@@ -64,10 +64,49 @@ import localeES from "@angular/common/locales/es";
 import { registerLocaleData } from '@angular/common';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ConsejoComponent } from './consejo/consejo.component';
-import { NotifierModule } from 'angular-notifier';
+import { NotifierModule, NotifierOptions } from 'angular-notifier';
 
 registerLocaleData(localeES, "es");
-
+const customNotifierOptions: NotifierOptions = {
+  position: {
+      horizontal: {
+          position: 'left',
+          distance: 12
+      },
+      vertical: {
+          position: 'bottom',
+          distance: 12,
+          gap: 10
+      }
+  },
+  theme: 'material',
+  behaviour: {
+      autoHide: 5000,
+      onClick: false,
+      onMouseover: 'pauseAutoHide',
+      showDismissButton: true,
+      stacking: 4
+  },
+  animations: {
+      enabled: true,
+      show: {
+          preset: 'slide',
+          speed: 300,
+          easing: 'ease'
+      },
+      hide: {
+          preset: 'fade',
+          speed: 300,
+          easing: 'ease',
+          offset: 50
+      },
+      shift: {
+          speed: 300,
+          easing: 'ease'
+      },
+      overlap: 150
+  }
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -131,7 +170,7 @@ registerLocaleData(localeES, "es");
     ReactiveFormsModule,
     HttpClientModule,
     NgxPaginationModule,
-    NotifierModule
+    NotifierModule.withConfig(customNotifierOptions)
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' },{provide: LOCALE_ID, useValue: 'es-ES'},
   {
