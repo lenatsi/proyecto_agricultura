@@ -40,7 +40,6 @@ import { MatTabsModule } from '@angular/material/tabs'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatTooltipModule } from '@angular/material/tooltip'
 import { MatTreeModule } from '@angular/material/tree'
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
@@ -63,6 +62,9 @@ import { TusAjustesComponent } from './dashboard/tus-ajustes/tus-ajustes.compone
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import localeES from "@angular/common/locales/es";
 import { registerLocaleData } from '@angular/common';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { ConsejoComponent } from './consejo/consejo.component';
+import { NotifierModule } from 'angular-notifier';
 
 registerLocaleData(localeES, "es");
 
@@ -82,7 +84,8 @@ registerLocaleData(localeES, "es");
       TuHuertoComponent,
       TuCalendarioComponent,
       TusTareasComponent,
-      TusAjustesComponent
+      TusAjustesComponent,
+      ConsejoComponent
    ],
   imports: [
     BrowserModule,
@@ -127,7 +130,8 @@ registerLocaleData(localeES, "es");
     MatFormFieldModule,
     ReactiveFormsModule,
     HttpClientModule,
-
+    NgxPaginationModule,
+    NotifierModule
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' },{provide: LOCALE_ID, useValue: 'es-ES'},
   {

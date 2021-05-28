@@ -1,3 +1,4 @@
+@import "../../styles.scss";
 .BoxConsejos {
   display: flex;
   justify-content: center;
@@ -63,52 +64,67 @@
       color: #2d5f00;
       font-weight: 900;
     }
-    .carousel {
-      width: 100%;
-      margin-top: 20px;
-      .carousel-inner {
-        padding-left: 121px;
-        padding-right: 100px;
-        padding-bottom: 20px;
-        .card {
-          min-width: 100%;
-          margin: 0;
-          border: none;
-          .imagen {
-            width: 331px;
-            height: 231px;
-            border-radius: 20px;
-            margin-bottom: -55px;
-            z-index: 3;
-            background-image: url(../../assets/img/pexels-gary-barnes-6231906.jpeg);
-            background-size: cover;
-            background-position: center;
-          }
-          .card-body {
-            width: 280px;
-            height: 200px;
-            box-shadow: 2px 4px 13px 2px rgba(0, 0, 0, 0.25);
-            margin-left: 25px;
-            padding-top: 80px;
-            padding-left: 20px;
-            h5 {
-              font-weight: 900;
-              font-size: 14px;
-              text-align: center;
-            }
-            p {
-              font-size: 12px;
-            }
+    .box-card {
+      padding: 10px;
+      display: flow-root;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+      min-height: 400px;
+      &:hover {
+        padding-top: 5px;
+        .box-data {
+          box-shadow: 0px 2px 18px rgba(73, 73, 98, 0.4);
+          h2 {
+            color: $secondary_green;
           }
         }
-      }
-    }
 
-    button {
-      width: 100px;
-      span {
-        color: #d7d7d7;
       }
+      .box-img {
+        transition: all 0.2s ease;
+        height: 200px;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: -16px;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .box-data {
+        transition: all 0.3s ease;
+        background: #ffffff;
+        box-shadow: 0px 2px 18px rgba(73, 73, 98, 0.170325);
+        border-radius: 8px;
+        padding: 15px;
+        margin: 0 10px;
+        min-height: 200px;
+        h2 {
+          transition: all 0.3s ease;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          color: #000000;
+          margin-top: 20px;
+        }
+        .ptag {
+          background: #000000;
+          border-radius: 18.5px;
+          color: white;
+          padding: 5px 13px;
+          display: inline-block;
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+
     }
   }
 }
+
+

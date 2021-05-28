@@ -1,3 +1,5 @@
+import { ConsejoComponent } from './consejo/consejo.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 import { TusTareasComponent } from './dashboard/tus-tareas/tus-tareas.component';
 import { TuHuertoComponent } from './dashboard/tu-huerto/tu-huerto.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -18,8 +20,9 @@ const routes: Routes = [
   { path: "tutoriales", component: TutorialesComponent },
   { path: "planificacion", component: PlanificacionComponent },
   { path: "formulario", component: FormularioComponent },
-  {
-    path: "dashboard", component: DashboardComponent,
+  {path: "tutorial/:id", component: TutorialComponent},
+  {path: "consejo/:id", component: ConsejoComponent},
+  {path: "dashboard", component: DashboardComponent,
     children: [
       { path: 'tuhuerto', component: TuHuertoComponent },
       { path: 'tucalendario', component: TuCalendarioComponent },

@@ -6,83 +6,181 @@
     <div class="container2">
       <div class="imagenSol"></div>
       <div class="Box">
-        <div class="gradient">
-        </div>
+        <div class="gradient"></div>
         <div class="imagenHuerto"></div>
         <div class="formulario">
           <i class="fas fa-user"></i>
           <div class="options">
-            <a href="javascript: void(0)" class="iden" [ngClass]="{'active': loginActive}" (click)="login()">Identifícate</a>
+            <a
+              href="javascript: void(0)"
+              class="iden"
+              [ngClass]="{ active: loginActive }"
+              (click)="loginvisible()"
+              >Identifícate</a
+            >
             <div class="line"></div>
-            <a href="javascript: void(0)" class="regis" [ngClass]="{'active': registerActive}" (click)="register()">Regístrate</a>
+            <a
+              href="javascript: void(0)"
+              class="regis"
+              [ngClass]="{ active: registerActive }"
+              (click)="registervisible()"
+              >Regístrate</a
+            >
           </div>
           <form [style.display]="loginVisible ? 'block' : 'none'">
             <div id="login" class="col s12">
-              <form class="col s12">
+              <form
+                class="col s12 needs-validation"
+                [formGroup]="loginForm"
+                (ngSubmit)="onSave()"
+                novalidate
+              >
                 <div class="form-container">
                   <div class="row">
                     <div class="input-field col s12">
-                      <span class="field">Usuario:</span><br>
-                      <input id="email" type="email" class="validate">
+                      <span class="field">Usuario:</span><br />
+                      <input
+                        id="emaillogin"
+                        type="email"
+                        class="validate"
+                        formControlName="email"
+                        [ngClass]="{ 'is-invalid': isSend && f.email.errors }"
+                      />
+                      <div class="invalid-feedback">
+                        Introduce un email válido
+                      </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <span class="field">Contraseña:</span><br>
-                      <input id="password" type="password" class="validate">
+                      <span class="field">Contraseña:</span><br />
+                      <input
+                        id="passwordlogin"
+                        type="password"
+                        class="validate"
+                        formControlName="password"
+                        [ngClass]="{
+                          'is-invalid': isSend && f.password.errors
+                        }"
+                        id="floatingPassword"
+                      />
+                      <div class="invalid-feedback">
+                        Introduce una contraseña válida
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="forgetdiv">
+                  <span class="forget"
+                    >¿Has olvidado la contraseña?<a href=""> Recuperar</a></span
+                  >
+                </div>
+                <div class="loginbutton">
+                  <button class="button Submit" type="submit">
+                    <span>ENTRAR</span>
+                  </button>
+                </div>
               </form>
-            </div>
-            <div class="forgetdiv">
-              <span class="forget">¿Has olvidado la contraseña?<a href=""> Recuperar</a></span>
-            </div>
-            <div class="loginbutton">
-              <button routerLink="/dashboard" routerLinkActive="active" class="button" class="button"><span>ENTRAR</span></button>
             </div>
           </form>
           <form [style.display]="registerVisible ? 'block' : 'none'">
-          <div class="registerdiv">
-            <div id="register" class="col s12">
-              <form class="col s12">
-                <div class="form-container">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <span class="field">Nombre:</span><br>
-                      <input id="email" type="email" class="validate">
+            <div class="registerdiv">
+              <div id="register" class="col s12">
+                <form
+                  class="col s12 needs-validation"
+                  [formGroup]="mForm"
+                  (ngSubmit)="onSaveSignUp()"
+                  novalidate
+                >
+                  <div class="form-container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <span class="field">Nombre:</span><br />
+                        <input
+                          id="nombre"
+                          type="name"
+                          class="validate"
+                          [(ngModel)]="namesignup"
+                          formControlName="namesignup"
+                          [ngClass]="{ 'is-invalid': isSend && fs.namesignup.errors }"
+                        />
+                        <div class="invalid-feedback">
+                          Introduce un nombre válido
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <span class="field">Email:</span><br />
+                        <input
+                          id="emailsignUp"
+                          type="email"
+                          class="validate"
+                          [(ngModel)]="emailsignup"
+                          formControlName="emailsignup"
+                          [ngClass]="{ 'is-invalid': isSend && fs.emailsignup.errors }"
+                        />
+                        <div class="invalid-feedback">
+                          Introduce un email válido
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <span class="field">Contraseña:</span><br />
+                        <input
+                          id="password1"
+                          type="password"
+                          class="validate"
+                          [(ngModel)]="Newpassword"
+                          formControlName="passwordsignup"
+                          [ngClass]="{
+                            'is-invalid': isSend && fs.passwordsignup.errors
+                          }"
+                        />
+                        <div class="invalid-feedback">
+                          Introduce una contraseña válida
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <span class="field">Confirmar contraseña:</span><br />
+                        <input
+                          id="password2"
+                          type="password"
+                          class="validate"
+                          formControlName="passwordRepeatsignup"
+                          [ngClass]="{
+                            'is-invalid': isSend && fs.passwordRepeatsignup.errors
+                          }"
+                          placeholder="Repite contraseña"
+                        />
+
+                        <div class="invalid-feedback">
+                          La contraseña no coincide
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <span class="field">Email:</span><br>
-                      <input id="password" type="password" class="validate">
-                    </div>
+                  <div class="forgetdiv">
+                    <input type="checkbox" />&nbsp;
+                    <span class="forget"
+                      >Acepto la <a href="">Política de privacidad </a> y
+                      <a href="">Protección de datos</a></span
+                    >
                   </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <span class="field">Contraseña:</span><br>
-                      <input id="password" type="password" class="validate">
-                    </div>
+                  <div class="registerbutton">
+                    <button
+                      class="button"
+                      type="submit"
+                    >
+                      <span>REGISTRARSE</span>
+                    </button>
                   </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <span class="field">Confirmar contraseña:</span><br>
-                      <input id="password" type="password" class="validate">
-                    </div>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
-            <div class="forgetdiv">
-              <input type="checkbox">&nbsp;
-              <span class="forget">Acepto la <a href="">Política de privacidad </a> y <a href="">Protección de
-                  datos</a></span>
-            </div>
-            <div class="registerbutton">
-              <button routerLink="/formulario" routerLinkActive="active" class="button"><span>REGISTRARSE</span></button>
-            </div>
-          </div>
           </form>
         </div>
       </div>
